@@ -1,0 +1,9 @@
+:root {
+  --lightbrown: #DDB892;
+  --light-2brown: #EDE0D4;
+  --light-1brown: #E6CCB2;
+  --darkbrown1: #B08968;
+  --darkbrown2: #7F5539;
+  --darkbrown3: #9C6644; /*for assigning a variable this is a syntax we are assigning lightbrown 
+                           variable to the color palete code DDB892 */
+}   

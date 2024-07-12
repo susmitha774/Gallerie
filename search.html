@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Gallerie | A Photo search App
+        </title>
+        <link rel="stylesheet" href="./assets/common.css"/>
+        <link rel="stylesheet" href="./assets/search.css"/>
+    </head>
+    <body>
+        <!-- Navigation bar-->
+        <nav>
+            <a href="./"><img src="./assets/logo.png" alt="logo" class="logo"></a><!-- The 'a' tag in HTML defines a hyperlink,
+                                                       which is used to link from one page to another-->
+            <a href ="./index.html"><h1 class="title">Gallerie</h1></a> 
+                                                     
+            <form action="./search.html" method="get"> <!--The form sends a request to search.html using the get method.-->
+               <input type="text" name="q" autocomplete="off" class="search" placeholder="Search anything"/>
+               <input type="submit" value ="SEARCH" class="search"/>
+            </form> <!--The data entered in the text field is included in the URL as a query parameter. For example, if the user types "cats", the URL might look like search.html?q=cats.
+            The search.html page can then use this query parameter to perform a search or display results based on the user's input.-->
+          
+       </nav>  <!-- if you give class = something you can use it to edit it in css-->
+           <!-- Main Section--> 
+
+        <!-- Main Section--> 
+        <section>
+            <h1 class="heading">&lt;SEARCH FOR - <span id="search_query"></span>&gt;</h1>
+            <div class="container" id="result_container"></div>
+        </section>
+
+        <!--Footer of the page-->
+        <footer>
+            <a href="./"><h3>Gallerie</h3></a>
+            <h1 class="footer-seperator"> | </h1>
+            <h3>Designed and Devoloped by Susmitha!</h3>
+            <h1 class="footer-seperator"> | </h1>
+            <a href="./"><h3>Github</h3></a>
+
+        </footer>
+
+        <script src="./assets/common.js"></script>
+        <script src="./assets/search.js"></script>
+    </body>
+
+</html>
+
